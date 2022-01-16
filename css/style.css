@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+.breadcrumb {
+  display: none; }
+
+@media (min-width: 1301px) {
+  .desktop {
+    display: block !important; } }
+
+@media (max-width: 866px) {
+  .desktop {
+    display: none !important; } }
+
+@media (min-width: 1301px) {
+  .mobile {
+    display: none !important; } }
+
+@media (max-width: 866px) {
+  .mobile {
+    display: block !important; } }
+
+.main-content {
+  background-color: transparent;
+  margin-top: 10px;
+  padding: 0; }
+  @media (max-width: 972px) {
+    .main-content {
+      margin-top: 23px; } }
+  @media (min-width: 801px) {
+    .main-content {
+      width: 98%;
+      max-width: 1800px; } }
+  @media (max-width: 800px) {
+    .main-content {
+      width: 100%; } }
+  .main-content .wrapper {
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+    .main-content .wrapper .cp-wrapper {
+      padding: 30px; }
+
+.footer {
+  float: left; }
+
+.site-footer {
+  border: 1px solid #e5e5e5;
+  background-color: #FFF;
+  margin-bottom: 10px;
+  padding: 15px;
+  padding-top: 40px;
+  margin-top: 10px; }
+  @media (min-width: 801px) {
+    .site-footer {
+      width: 98%;
+      max-width: 1800px; } }
+  @media (max-width: 800px) {
+    .site-footer {
+      width: 100%; } }
+  .site-footer .wrapper {
+    width: inherit;
+    margin: inherit; }
+
+/* Start of global styles */
+html {
+  font-family: Open Sans, Arial, sans-serif;
+  font-size: 10px;
+  background-color: #fff; }
+
+body {
+  -webkit-animation: loadIn 500ms forwards;
+          animation: loadIn 500ms forwards; }
+
+/* */
+/* Responsive device widths */
+/* */
+/* Fade-in animation on load */
+@-webkit-keyframes loadIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes loadIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/* */
+/* Start of Highest Cashback Guarentee content */
+.hcg-wrapper {
+  /* Header text styles */
+  /* */
+  /* Body text styles */
+  /* Change body style */
+  /* */
+  /* */
+  /* Set max-width of inner content */
+  /* */
+  /* Content slices */
+  /* */
+  /* Claims slice */
+  /* End of claims slice */
+  /* FAQs slice */
+  /* End of FAQs slice */
+  /* End of Highest Cashback Guarentee content */ }
+  .hcg-wrapper h2 {
+    color: #6d6d6d;
+    font-weight: 700;
+    font-size: 3.2rem; }
+    @media (max-width: 640px) {
+      .hcg-wrapper h2 {
+        font-size: 2.2rem; } }
+  .hcg-wrapper h3 {
+    color: #6d6d6d;
+    font-weight: 700;
+    font-size: 2rem; }
+  .hcg-wrapper p {
+    color: #6d6d6d;
+    font-weight: 400;
+    font-size: 1.6rem; }
+  .hcg-wrapper .inner-wrap {
+    max-width: 984px;
+    margin: 0 auto; }
+  .hcg-wrapper .section {
+    padding: 35px 20px 70px 20px; }
+    .hcg-wrapper .section__header {
+      text-align: center;
+      margin-bottom: 45px; }
+    .hcg-wrapper .section--grey {
+      padding: 70px 20px 70px 20px;
+      background-color: #f6f7fb;
+      margin-bottom: 150px; }
+  .hcg-wrapper .claims-nav {
+    text-align: center;
+    margin-bottom: 92px; }
+    .hcg-wrapper .claims-nav__option {
+      color: #6d6d6d;
+      font-weight: 400;
+      font-size: 1.6rem;
+      margin: 8px 20px 8px 20px; }
+    .hcg-wrapper .claims-nav__option:hover {
+      text-decoration: none; }
+  .hcg-wrapper .claims-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 55px; }
+    @media (max-width: 640px) {
+      .hcg-wrapper .claims-grid {
+        margin-bottom: 0px; } }
+    .hcg-wrapper .claims-grid__item {
+      width: 28%;
+      position: relative;
+      text-align: center; }
+      @media (max-width: 640px) {
+        .hcg-wrapper .claims-grid__item {
+          width: 100%;
+          padding-left: 50px;
+          padding-right: 50px;
+          margin-bottom: 40px; } }
+    .hcg-wrapper .claims-grid__icon {
+      max-width: 110px; }
+    .hcg-wrapper .claims-grid__header {
+      margin-top: 10px;
+      margin-bottom: 10px; }
+    .hcg-wrapper .claims-grid__desc {
+      margin-top: 0; }
+  .hcg-wrapper .claim-cta {
+    background-color: #00885a;
+    border: 2px solid #00885a;
+    border-radius: 99px;
+    display: block;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 0 auto;
+    padding: 9px 59px 9px 59px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+  .hcg-wrapper .claim-cta:hover {
+    background-color: #ffffff;
+    color: #00885a;
+    cursor: pointer; }
+  .hcg-wrapper .faqs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .hcg-wrapper .faqs__item {
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+      background-color: #fff;
+      cursor: pointer;
+      margin-bottom: 20px;
+      padding: 20px;
+      width: 43.8%;
+      margin-left: 1%;
+      margin-right: 1%;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none; }
+      .hcg-wrapper .faqs__item--active {
+        display: block; }
+      @media (max-width: 1022px) {
+        .hcg-wrapper .faqs__item {
+          width: 98%;
+          margin-bottom: 20px; } }
+    .hcg-wrapper .faqs__q {
+      color: #6d6d6d;
+      font-weight: 400;
+      font-size: 1.6rem;
+      margin: 0; }
+    .hcg-wrapper .faqs__a {
+      color: #B2B2B2;
+      display: none;
+      font-size: 1.6rem;
+      font-weight: 400;
+      margin-bottom: 0;
+      margin-top: 10px; }
+    .hcg-wrapper .faqs__arrow {
+      float: right;
+      max-width: 11.6px;
+      margin-top: 8px; }

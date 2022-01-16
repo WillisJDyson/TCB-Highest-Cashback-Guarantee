@@ -1,0 +1,244 @@
+/* Start of global styles */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@mixin main-font {
+  font-family: Open Sans, Arial, sans-serif;
+}
+
+html {
+  @include main-font;
+  font-size: 10px; // Root element font size
+  background-color: #fff;
+}
+
+body {
+  animation: loadIn 500ms forwards;
+}
+/* */
+
+
+/* Responsive device widths */
+$tablet-width: 1022px;
+$mobile-width: 640px;
+
+
+@mixin tablet-width {
+  @media (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin mobile-width {
+  @media (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+/* */
+
+
+/* Fade-in animation on load */
+@keyframes loadIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+/* */
+
+/* Start of Highest Cashback Guarentee content */
+.hcg-wrapper {
+
+  /* Header text styles */
+  $header-colour: #6d6d6d;
+  $header-weight: 700;
+
+  @mixin header-style {
+    color: #{$header-colour};
+    font-weight: #{$header-weight};
+  }
+
+  h2 {
+    @include header-style;
+    font-size: 3.2rem;
+
+    @include mobile {
+      font-size: 2.2rem;
+    }
+  }
+
+  h3 {
+    @include header-style;
+    font-size: 2rem;
+  }
+  /* */
+
+  /* Body text styles */
+    /* Change body style */
+    $body-colour: #6d6d6d;
+    $body-weight: 400;
+    $body-size: 1.6rem;
+
+    @mixin body-style {
+      color: #{$body-colour};
+      font-weight: #{$body-weight};
+      font-size: #{$body-size};
+    }
+    /* */
+
+  p {
+    @include body-style;
+  }
+
+  /* */
+
+  /* Set max-width of inner content */
+  .inner-wrap {
+    max-width: 984px;
+    margin: 0 auto;
+  }
+  /* */
+
+  /* Content slices */
+  .section {
+    padding: 35px 20px 70px 20px;
+
+    &__header {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    &--grey {
+      padding: 70px 20px 70px 20px;
+      background-color: #f6f7fb;
+      margin-bottom: 150px;
+    }
+  }
+  /* */
+
+  /* Claims slice */
+  .claims-nav {
+    text-align: center;
+    margin-bottom: 92px;
+
+    &__option {
+      @include body-style;
+      margin: 8px 20px 8px 20px;
+    }
+    &__option:hover {
+      text-decoration: none;
+    }
+  }
+
+  .claims-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 55px;
+
+    @include mobile {
+      margin-bottom: 0px;
+    }
+
+    &__item {
+      width: 28%;
+      position: relative;
+      text-align: center;
+
+      @include mobile {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-bottom: 40px;
+      }
+    }
+
+    &__icon {
+      max-width: 110px;
+    }
+
+    &__header {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    &__desc {
+      margin-top: 0;
+    }
+  }
+
+  .claim-cta {
+    background-color: #00885a;
+    border: 2px solid #00885a;
+    border-radius: 99px;
+    display: block;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 0 auto;
+    padding: 9px 59px 9px 59px;
+    transition: 0.3s;
+  }
+
+  .claim-cta:hover {
+    background-color: #ffffff;
+    color: #00885a;
+    cursor: pointer;
+  }
+  /* End of claims slice */
+
+
+  /* FAQs slice */
+  .faqs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__item {
+      align-self: flex-start;
+      background-color: #fff;
+      cursor: pointer;
+      margin-bottom: 20px;
+      padding: 20px;
+      width: 43.8%;
+      margin-left: 1%;
+      margin-right: 1%;
+      user-select: none;
+
+      &--active {
+        display: block;
+      }
+
+      @include tablet-width {
+        width: 98%;
+        margin-bottom: 20px;
+      }
+    }
+
+    &__q {
+      @include body-style;
+      margin: 0;
+    }
+
+    &__a {
+      color: #B2B2B2;
+      display: none;
+      font-size: 1.6rem;
+      font-weight: 400;
+      margin-bottom: 0;
+      margin-top: 10px;
+    }
+
+    &__arrow {
+      float: right;
+      max-width: 11.6px;
+      margin-top: 8px;
+    }
+  }
+  /* End of FAQs slice */
+
+
+/* End of Highest Cashback Guarentee content */
+}
